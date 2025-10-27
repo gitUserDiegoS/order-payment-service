@@ -1,7 +1,9 @@
 package com.ecommerce.orderpaymentservice.infrastructure.adapter.securityauth.config;
 
 
-import com.ecommerce.productservice.domain.model.passwordencoder.gateway.PasswordEncoderRepository;
+
+
+import com.ecommerce.orderpaymentservice.domain.model.passwordencoder.gateway.PasswordEncoderRepository;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;

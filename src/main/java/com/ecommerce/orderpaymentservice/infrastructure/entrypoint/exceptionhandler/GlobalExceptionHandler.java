@@ -1,8 +1,9 @@
 package com.ecommerce.orderpaymentservice.infrastructure.entrypoint.exceptionhandler;
 
 
-import com.ecommerce.productservice.domain.bussinesexception.BusinessException;
-import com.ecommerce.productservice.infrastructure.entrypoint.dto.ErrorResponseDto;
+
+import com.ecommerce.orderpaymentservice.domain.bussinesexception.BusinessException;
+import com.ecommerce.orderpaymentservice.infrastructure.entrypoint.dto.ErrorResponseDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

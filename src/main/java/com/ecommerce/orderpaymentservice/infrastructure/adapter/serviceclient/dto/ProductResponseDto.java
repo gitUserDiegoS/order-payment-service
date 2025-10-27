@@ -1,4 +1,4 @@
-package com.ecommerce.orderpaymentservice.infrastructure.entrypoint.dto;
+package com.ecommerce.orderpaymentservice.infrastructure.adapter.serviceclient.dto;
 
 
 import io.swagger.v3.oas.annotations.media.Schema;

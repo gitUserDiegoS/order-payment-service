@@ -11,7 +11,7 @@ spring:
   application:
     name: Product Service
 server:
-  port: '8082'
+  port: '8083'
 
 security:
   jwt:
@@ -32,3 +32,6 @@ springdoc:
     title: Product Service Api
     version: 1.0.0
     description: Documentation about product operations
+
+userservice:
+  url: 

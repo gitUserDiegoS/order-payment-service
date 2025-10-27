@@ -1,7 +1,7 @@
 package com.ecommerce.orderpaymentservice.domain.model.tokenprovider.gateway;
 
 
-import com.ecommerce.productservice.domain.model.usersession.UserSession;
+import com.ecommerce.orderpaymentservice.domain.model.usersession.UserSession;
 
 /**
  * Defines a contract to validate jwt tokens
