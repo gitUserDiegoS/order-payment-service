@@ -1,6 +1,6 @@
 package com.ecommerce.orderpaymentservice.infrastructure.entrypoint.dto;
 
-import com.ecommerce.orderpaymentservice.domain.model.order.OrderStatus;
+
 import lombok.Builder;
 import lombok.Data;
 
@@ -19,5 +19,5 @@ public class OrderResponseDto {
     private String status;
     private Date dateCreated;
     private List<OrderItemDto> items;
-    //private PaymentDto payment;
+
 }

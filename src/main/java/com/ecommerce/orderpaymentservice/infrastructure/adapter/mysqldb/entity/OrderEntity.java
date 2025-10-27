@@ -44,20 +44,5 @@ public class OrderEntity {
     @JoinColumn(name = "user_id")
     private UserEntity user;
 
-    /*
-    public void add(OrderItemEntity item) {
 
-        if (item != null) {
-            if (orderItems == null) {
-                orderItems = new HashSet<>();
-            }
-
-            orderItems.add(item);
-            item.setOrder(this);
-        }
-
-    }
-
-
-     */
 }

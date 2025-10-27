@@ -1,11 +1,9 @@
 package com.ecommerce.orderpaymentservice.domain.model.order;
 
 import com.ecommerce.orderpaymentservice.domain.model.orderitem.OrderItem;
-import com.ecommerce.orderpaymentservice.domain.model.user.User;
-import jakarta.persistence.*;
+
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
+
 
 import java.math.BigDecimal;
 import java.util.*;

@@ -6,16 +6,14 @@ import com.ecommerce.orderpaymentservice.domain.model.order.OrderStatus;
 import com.ecommerce.orderpaymentservice.domain.model.order.gateway.OrderRepository;
 import com.ecommerce.orderpaymentservice.domain.model.orderitem.OrderItem;
 
-import com.ecommerce.orderpaymentservice.domain.model.passwordencoder.gateway.PasswordEncoderRepository;
-import com.ecommerce.orderpaymentservice.infrastructure.adapter.mysqldb.entity.OrderItemEntity;
-import com.ecommerce.orderpaymentservice.infrastructure.adapter.mysqldb.entity.UserEntity;
+
 import com.ecommerce.orderpaymentservice.infrastructure.adapter.mysqldb.mapper.OrderMapper;
-import com.ecommerce.orderpaymentservice.infrastructure.adapter.mysqldb.entity.OrderEntity;
+
 import com.ecommerce.orderpaymentservice.infrastructure.adapter.serviceclient.ProductClient;
-import com.ecommerce.orderpaymentservice.infrastructure.adapter.serviceclient.dto.ProductResponseDto;
+
 import com.ecommerce.orderpaymentservice.infrastructure.entrypoint.dto.CreateOrderDto;
 import com.ecommerce.orderpaymentservice.infrastructure.entrypoint.dto.OrderItemDto;
-import com.ecommerce.orderpaymentservice.infrastructure.entrypoint.dto.OrderResponseDto;
+
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -23,7 +21,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
-import java.sql.Date;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -71,12 +69,9 @@ public class OrderUseCase implements IorderUseCase {
         order.setTotalPrice(totalPrice);
         order.setTotalQuantity(totalQuantity);
 
-        // Save and return domain model
-        //var entity = mapper.toEntity(order);
-
 
         return orderRepository.save(order);
-        //mapper.toDomain(saved);
+
     }
 
     @Override

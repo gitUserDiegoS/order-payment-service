@@ -1,7 +1,6 @@
 package com.ecommerce.orderpaymentservice.domain.model.orderitem;
 
-import com.ecommerce.orderpaymentservice.domain.model.order.Order;
-import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
