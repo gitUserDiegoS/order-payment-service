@@ -7,9 +7,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name = "orders")
@@ -19,7 +17,6 @@ public class OrderEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private Long id;
 
     @Column(name = "order_tracking_number")
@@ -34,22 +31,20 @@ public class OrderEntity {
     @Column(name = "status")
     private String status;
 
-    @Column(name = "date_created")
     @CreationTimestamp
     private Date dateCreated;
 
-    @Column(name = "last_updated")
     @UpdateTimestamp
-    private Date lastUpdate;
+    private Date lastUpdated;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "order")
-    private Set<OrderItemEntity> orderItems = new HashSet<>();
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<OrderItemEntity> orderItems = new ArrayList<>();
 
     @ManyToOne
-    @JoinColumn(name = "customer_id")
-    private UserEntity customer;
+    @JoinColumn(name = "user_id")
+    private UserEntity user;
 
-    
+    /*
     public void add(OrderItemEntity item) {
 
         if (item != null) {
@@ -63,4 +58,6 @@ public class OrderEntity {
 
     }
 
+
+     */
 }

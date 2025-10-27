@@ -1,7 +1,8 @@
 package com.ecommerce.orderpaymentservice.infrastructure.adapter.securityauth.config;
 
 
-import com.ecommerce.productservice.infrastructure.adapter.securityauth.JwtAuthFilter;
+
+import com.ecommerce.orderpaymentservice.infrastructure.adapter.securityauth.JwtAuthFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
